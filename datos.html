@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/datos.css">
+    <title>Datos - Sistema de Monitoreo</title>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="camaras.html">Cámaras</a>
+                <a href="datos.html" class="active">Datos</a>
+            </div>
+            <form action="login.html" method="GET">
+                <button class="control-btn btn-cancel">Cerrar Sesión</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h1>Registro de Afectaciones</h1>
+
+        <div class="greenhouse-card">
+            <div class="greenhouse-header">
+
+                <h2 class="greenhouse-title">
+                    <img src="IMG/INC.jpg" alt="jpg" width="40" height="40" align="left" />
+                    Invernadero 1
+                </h2>
+                <div class="last-scan">
+                    <div class="scan-dot"></div>
+                    <div class="scan-time">
+                        <span class="scan-label">Último escaneo</span>
+                        <span class="scan-value">17/01/2025 15:30</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sections-grid">
+                <div class="section-card affected">
+                    <div class="section-title">Sección 1</div>
+                    <img src="IMG/MO2.jpg" alt="Mosca Blanca Sección 1" class="pest-image"
+                        onclick="openModal(this.src)">
+                    <div class="pest-details">
+                        <div>Tipo: Mosca Blanca</div>
+                        <div>Nivel: Alto</div>
+                        <div class="coordinates">Coordenadas: A1-B2</div>
+                    </div>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 2</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 3</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card affected">
+                    <div class="section-title">Sección 4</div>
+                    <img src="IMG/MO1.jpg" alt="Mosca Blanca Sección 4" class="pest-image"
+                        onclick="openModal(this.src)">
+                    <div class="pest-details">
+                        <div>Tipo: Mosca Blanca</div>
+                        <div>Nivel: Medio</div>
+                        <div class="coordinates">Coordenadas: D3-E4</div>
+                    </div>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 5</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 6</div>
+                    <p>Sin afectaciones</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="greenhouse-card">
+            <div class="greenhouse-header">
+                <h2 class="greenhouse-title">
+                    <img src="IMG/INC.jpg" alt="jpg" width="40" height="40" align="left" />
+                    Invernadero 2
+                </h2>
+                <div class="last-scan">
+                    <div class="scan-dot"></div>
+                    <div class="scan-time">
+                        <span class="scan-label">Último escaneo</span>
+                        <span class="scan-value">17/01/2025 15:25</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sections-grid">
+                <div class="section-card normal">
+                    <div class="section-title">Sección 1</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 2</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 3</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 4</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 5</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 6</div>
+                    <p>Sin afectaciones</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="greenhouse-card">
+            <div class="greenhouse-header">
+                <h2 class="greenhouse-title">
+                    <img src="IMG/INC.jpg" alt="jpg" width="40" height="40" align="left" />
+                    Invernadero 3
+                </h2>
+                <div class="last-scan">
+                    <div class="scan-dot"></div>
+                    <div class="scan-time">
+                        <span class="scan-label">Último escaneo</span>
+                        <span class="scan-value">17/01/2025 15:25</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sections-grid">
+                <div class="section-card normal">
+                    <div class="section-title">Sección 1</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 2</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 3</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 4</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 5</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 6</div>
+                    <p>Sin afectaciones</p>
+                </div>
+            </div>
+        </div>
+        <div class="greenhouse-card">
+            <div class="greenhouse-header">
+                <h2 class="greenhouse-title">
+                    <img src="IMG/INC.jpg" alt="jpg" width="40" height="40" align="left" />
+                    Invernadero 4
+                </h2>
+                <div class="last-scan">
+                    <div class="scan-dot"></div>
+                    <div class="scan-time">
+                        <span class="scan-label">Último escaneo</span>
+                        <span class="scan-value">17/01/2025 15:25</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sections-grid">
+                <div class="section-card normal">
+                    <div class="section-title">Sección 1</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 2</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 3</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 4</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 5</div>
+                    <p>Sin afectaciones</p>
+                </div>
+                <div class="section-card normal">
+                    <div class="section-title">Sección 6</div>
+                    <p>Sin afectaciones</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal para mostrar imagen ampliada -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Imagen ampliada">
+        </div>
+    </div>
+
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('active');
+        }
+
+        // Cerrar modal al hacer clic fuera de la imagen
+        document.getElementById('imageModal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+
+</html>

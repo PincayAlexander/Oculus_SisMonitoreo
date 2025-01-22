@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/camaras.css">
+    <script src="JS/camara.js"></script>
+    <title>Cámaras - Sistema de Monitoreo</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="camaras.html" class="active">Cámaras</a>
+                <a href="datos.html">Datos</a>
+            </div>
+            <form action="login.html" method="GET">
+                <button class="control-btn btn-cancel">Cerrar Sesión</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h1>Monitoreo en Tiempo Real</h1>
+
+        <div class="cameras-grid">
+            <!-- Invernadero 1 -->
+            <div class="camera-card">
+                <div class="camera-header">
+                    <div class="camera-title">
+
+                        <img src="IMG/cmr.jpg" alt="jpg" width="40" height="40" align="left" />
+                        <h3>Invernadero 1</h3>
+                        <div class="status-indicators">
+                            <div class="status-indicator live-indicator">
+                                <div class="status-dot live-dot"></div>
+                                LIVE
+                            </div>
+                            <div class="status-indicator pause-indicator">
+                                <div class="status-dot pause-dot"></div>
+                                PAUSE
+                            </div>
+                            <div class="status-indicator cancel-indicator">
+                                <div class="status-dot cancel-dot"></div>
+                                CANCEL
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="camera-feed">
+                    <img id="camera1" src="" alt="Cámara Invernadero 1" style="display: none;">
+                </div>
+            </div>
+
+            <!-- Invernadero 2 -->
+            <div class="camera-card">
+                <div class="camera-header">
+                    <div class="camera-title">
+
+                        <img src="IMG/cmr.jpg" alt="jpg" width="40" height="40" align="left" />
+                        <h3>Invernadero 2</h3>
+                        <div class="status-indicators">
+                            <div class="status-indicator live-indicator">
+                                <div class="status-dot live-dot"></div>
+                                LIVE
+                            </div>
+                            <div class="status-indicator pause-indicator">
+                                <div class="status-dot pause-dot"></div>
+                                PAUSE
+                            </div>
+                            <div class="status-indicator cancel-indicator">
+                                <div class="status-dot cancel-dot"></div>
+                                CANCEL
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="camera-feed">
+                    <img id="camera2" src="" alt="Cámara Invernadero 2" style="display: none;">
+                </div>
+            </div>
+
+            <!-- Invernadero 3 -->
+            <div class="camera-card">
+                <div class="camera-header">
+                    <div class="camera-title">
+
+                        <img src="IMG/cmr.jpg" alt="jpg" width="40" height="40" align="left" />
+                        <h3>Invernadero 3</h3>
+                        <div class="status-indicators">
+                            <div class="status-indicator live-indicator">
+                                <div class="status-dot live-dot"></div>
+                                LIVE
+                            </div>
+                            <div class="status-indicator pause-indicator">
+                                <div class="status-dot pause-dot"></div>
+                                PAUSE
+                            </div>
+                            <div class="status-indicator cancel-indicator">
+                                <div class="status-dot cancel-dot"></div>
+                                CANCEL
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="camera-feed">
+                    <img id="camera3" src="" alt="Cámara Invernadero 3" style="display: none;">
+                </div>
+            </div>
+
+            <!-- Invernadero 4 -->
+            <div class="camera-card">
+                <div class="camera-header">
+                    <div class="camera-title">
+                        <img src="IMG/cmr.jpg" alt="jpg" width="40" height="40" align="left" />
+                        <h3>Invernadero 4</h3>
+                        <div class="status-indicators">
+                            <div class="status-indicator live-indicator">
+                                <div class="status-dot live-dot"></div>
+                                LIVE
+                            </div>
+                            <div class="status-indicator pause-indicator">
+                                <div class="status-dot pause-dot"></div>
+                                PAUSE
+                            </div>
+                            <div class="status-indicator cancel-indicator">
+                                <div class="status-dot cancel-dot"></div>
+                                CANCEL
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="camera-feed">
+                    <img id="camera4" src="" alt="Cámara Invernadero 4" style="display: none;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controles centralizados -->
+        <div class="camera-controls">
+            <button class="control-btn btn-start" onclick="startAllMonitoring()">
+                <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                Iniciar
+            </button>
+            <form action="datos.html" target="_blank"><button class="control-btn btn-pause"
+                    onclick="pauseAllMonitoring()">
+                    <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="6" y="4" width="4" height="16"></rect>
+                        <rect x="14" y="4" width="4" height="16"></rect>
+                    </svg>
+                    Pausar
+                </button></form>
+
+            <form action="datos.html" target="_blank"><button class="control-btn btn-cancel"
+                    onclick="cancelAllMonitoring()">
+                    <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                    Cancelar
+                </button></form>
+
+        </div>
+        <div class="monitoring-status">
+            Estado: Sistema listo
+        </div>
+    </div>
+
+
+</body>
+
+</html>
