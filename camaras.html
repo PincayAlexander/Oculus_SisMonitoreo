@@ -16,7 +16,7 @@
                 <a href="camaras.html" class="active">Cámaras</a>
                 <a href="datos.html">Datos</a>
             </div>
-            <form action="login.html" method="GET">
+            <form action="index.html" method="GET">
                 <button class="control-btn btn-cancel">Cerrar Sesión</button>
             </form>
         </div>
@@ -139,34 +139,37 @@
         </div>
 
         <!-- Controles centralizados -->
-        <div class="camera-controls">
-            <button class="control-btn btn-start" onclick="startAllMonitoring()">
-                <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-                Iniciar
-            </button>
-            <form action="datos.html" target="_blank"><button class="control-btn btn-pause"
-                    onclick="pauseAllMonitoring()">
-                    <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="6" y="4" width="4" height="16"></rect>
-                        <rect x="14" y="4" width="4" height="16"></rect>
-                    </svg>
-                    Pausar
-                </button></form>
 
-            <form action="datos.html" target="_blank"><button class="control-btn btn-cancel"
-                    onclick="cancelAllMonitoring()">
+        <div class="fixed-footer">
+            <div class="camera-controls">
+                <button class="control-btn btn-start" onclick="startAllMonitoring()">
                     <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
                     </svg>
-                    Cancelar
-                </button></form>
+                    Iniciar
+                </button>
+                <form action="datos.html" target="_blank"><button class="control-btn btn-pause"
+                        onclick="pauseAllMonitoring()">
+                        <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="4" width="4" height="16"></rect>
+                            <rect x="14" y="4" width="4" height="16"></rect>
+                        </svg>
+                        Pausar
+                    </button></form>
 
-        </div>
-        <div class="monitoring-status">
-            Estado: Sistema listo
+                <form action="datos.html" target="_blank"><button class="control-btn btn-cancel"
+                        onclick="cancelAllMonitoring()">
+                        <svg class="control-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                        Cancelar
+                    </button></form>
+
+            </div>
+            <div class="monitoring-status">
+                Estado: Sistema listo
+            </div>
         </div>
     </div>
 
